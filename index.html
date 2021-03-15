@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+
+<head>
+  <meta charset="utf-8">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Indovina</title>
+</head>
+
+<body>
+
+  <h1> Indovina!</h1>
+
+  <h2>Indovina tre numeri interi compresi tra 1 e 50. Se sbagli, perdi una vita.
+    Il numero delle vite è determinato dal livello di difficoltà. Ad ogni numero indovinato,
+    recuperi tutte le vite che hai perso. </h2>
+
+  <h3>Seleziona il livello di difficoltà:</h3>
+
+  <br><br>
+
+  <select id="vite">
+    <option value="100">DEMO</option>
+    <option value="10">Facile</option>
+    <option value="7">Medio</option>
+    <option value="5">Difficile</option>
+  </select>
+
+  <br><br><br>
+
+  <input type="button" id="nuovaPartita" value="Nuova Partita">
+  <input type="button" id="ricomincia" value="Ricomincia">
+
+  <br><br><br>
+
+  <h3>Ti restano
+    <input type="text" id="viteCorrente" readonly="readonly">
+    vite!
+  </h3>
+
+  <br><br><br>
+
+  <input type="text" id="numero" placeholder="Inserisci un numero...">
+
+  <input type="button" id="prova" value="Prova">
+
+  <br><br><br>
+
+  <input type="text" id="esito" readonly="readonly">
+
+  <br><br><br>
+
+  <h3>Numeri indovinati:
+    <input type="text" id="punti" readonly="readonly">
+  </h3>
+
+  <br><br>
+
+  <div id="vittoria"><img src="haivinto.png" alt "hai vinto!"></div>
+  <div id="sconfitta"><img src="haiperso.png" alt "hai perso!"></div>
+
+</body>
+
+<footer>
+  <p>Creato da Andrea Failla per il Corso di Transizione di Fondamenti di Informatica
+    <br>
+  <address>e-mail:<a href="mailto:a.failla@studenti.unipi.it">Andrea Failla</a></address></p>
+  <small>Ultimo aggiornamento:<br>
+    <time datetime="30-11-2020" pubdate="pubdate">Lunedì 30 Novembre</time>
+  </small>
+
+</footer>
+
+
+</html>
